@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Martin's Portfolio</title>
+    <link rel="stylesheet" href="style_slo.css">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+          integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    
+    <script src="https://kit.fontawesome.com/ff2e88431e.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <div id="page">
+
+        <!-- if we put navbar in div id=anything when scrolling down we won't see navbar -->        
+        <nav class="navbar navbar-expand-lg bg-light gradient-navbar" id="nav-bar">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img src="./static/assets/favicon.png" alt="logo" class="logo"></a>              
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <!-- <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#header">Home</a>
+                        </li> -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="#header">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#services">Services</a>
+                        </li>
+                        <!-- <li class="nav-item">
+                            <a class="nav-link" href="#">Projects</a>
+                        </li> -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <header id="header">
+            <div class="container">
+                <div class="row">
+                    <div class="text-center">                       
+                        <img src="static/images/wave.jpg" class="img-fluid">
+                        <h1>Hi, I'm Martin</h1>
+                        <h2>an Electrical Engineer from SLOVEnia</h2>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <section id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 text-center">
+                        <img src="static/images/martin.jpg" alt="me" class="img-thumbnail">
+                    </div>
+                    <div class="col-lg-6">
+                        <p class="promo-title">About me</p>
+                        <p class="description">
+                            Dynamic, passionate and meticulous Electrical Engineer with 3+ years of professional experience in field of automation test development, software testing and 
+                            firmware/hardware testing. Skilled in manual and automated testing, designing and implementing automation processes and test cases, creating test plans, designing architecture of the new test frameworks and test results analysis.
+                            I love to play around with new technologies and I am always looking for new challenges. In my spare time I love to hike, swimm, play football, read books and travel. I am also amateur beekeeper and I love to work with animals and be in the nature.
+                        </p>
+                        <p class="tab-links">Technologies in which I have strong background:</p>
+
+                            <table class="technologies">
+                                <tr>
+                                    <td><li>Python</li></td>
+                                    <td><li>Pytest</li></td>
+                                    <td><li>C#</li></td>
+                                </tr>
+                                <tr>
+                                    <td><li>Selenium Web Driver</li></td>
+                                    <td><li>Selenium Grid</li></td>
+                                    <td><li>Git</li></td>
+                                </tr>
+                                <tr>
+                                    <td><li>Jenkins</li></td>
+                                    <td><li>Docker</li></td>
+                                    <td><li>Arduino/Raspberry Pi</li></td>
+                                </tr>   
+                                <tr>
+                                    <td><li>HTML/CSS</li></td>
+                                    <td><li>JavaScript</li></td>
+                                    <td><li>BootStrap</li></td>
+                                </tr>   
+                            </table>                       
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-4">
+                        <p class="tab-links">Soft Skills</p>
+                        <ul class="contents about-me">
+                            <li> <span>Creativity</span></li>
+                            <li> <span>Proactivity</span></li>
+                            <li> <span>Problem-solving</span></li>
+                            <li> <span>Team player</span></li>
+                            <li> <span>Communication</span></li>
+                            <li> <span>Adaptability</span></li>                            
+                        </ul>                       
+                    </div>
+                    <div class="col-md-4">
+                        <p class="tab-links">Experiances</p>
+                        <ul class="contents about-me">
+                            <li> <span>QA Python Engineer</span><br>WeGetFinancing, USA 2021-</li>
+                            <li> <span>QA Engineer</span><br>Blocksi SAS, Slovenia 2021</li>
+                            <li> <span>Firmware Test Engineer/Developer</span><br>Iskraemeco, Slovenia 2017-2021</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <p class="tab-links"">Education</p>
+                        <ul class="contents about-me">
+                            <li> <span>2019</span><br>Master's Degree from Automation and Robotics</li>
+                            <li> <span>2018</span><br>Erasmus+ Student exchange in Las Palmas, GC</li>
+                            <li> <span>2015</span><br>Bachelor's Degree from Electrical-Power Engineering</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="services">
+            <div class="container">
+                <h1 class="title text-center">My Services</h1>
+                <div class="row text-center">
+                    <div class="col-md-4">
+                        <div>
+                            <i class="fa-solid fa-wand-sparkles"></i>
+                            <h2>Daily tasks Automation</h2>
+                            <p> 
+                                Daily tasks automation is the process of using technology to automatically perform routine or repetitive tasks. 
+                                This can be done through the use of software programs, scripts, or other automation tools. 
+                                The goal of daily tasks automation is to improve efficiency, reduce the risk of human error, and free up time for more complex, value-added activities. 
+                                Some examples of tasks that can be automated include data entry, appointment scheduling, email responses, and social media updates.        
+                            </p>
+                            <a href="#">Contact me for more informations</a>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div>
+                            <i class="fa-solid fa-vial-virus"></i>
+                            <h2>QA of the software/firmware</h2>
+                            <p>
+                                QA testing is often performed by a QA engineer or QA tester, who will use a variety of tools and techniques to test the code and ensure that it meets the requirements.
+                                Quality assurance (QA) is the process of verifying that a product, service, or system meets specific quality standards.                                 
+                                The goal of QA is to identify and fix any defects or issues before the product is released to the public, in order to improve the overall quality and reliability of the software or firmware.
+                            </p>
+                            <a href="#">Contact me for more informations</a>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div>
+                            <i class="fa-solid fa-laptop-code"></i>
+                            <h2>Creating custom websites</h2>
+                            <p>
+                                Creating custom websites involves designing and building a unique, tailor-made website for a specific client or purpose. 
+                                This process typically begins with gathering information about the client's business, brand, and target audience, as well as their specific needs and goals for the website. 
+                                Based on this information, the website designer or development team will create a customized design and layout for the site, as well as determine which features and functionalities will be included. 
+                                Especially I am in love with wedding websites.
+                            </p>
+                            <a href="https://eugeniemartin.space/" target="_blank">Example</a>
+                        </div>
+                    </div>
+                         
+                </div>
+                <!-- <div class="all-services text-center">
+                    <button type="button" class="btn btn-primary">All Services</button>  
+                </div>       -->
+                        
+            </div>
+        </section>
+
+        <!-- <section id="my-work">
+            <div class="container">
+                <h1 class="title text-center">My Work</h1>
+                <div class="row">
+                    <div class="col-md-3">
+                        <i class="fa-solid fa-business-time"></i>
+                        <h2>Business Solutions</h2>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.   
+                        </p>
+                        <a href="#">Learn more</a>
+                    </div>
+                    <div class="col-md-3">
+                        <i class="fa-solid fa-business-time"></i>
+                        <h2>Business Solutions</h2>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.   
+                        </p>
+                        <a href="#">Learn more</a>
+                    </div>
+                    <div class="col-md-3">
+                        <i class="fa-solid fa-business-time"></i>
+                        <h2>Business Solutions</h2>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.   
+                        </p>
+                        <a href="#">Learn more</a>
+                    </div>
+                    <div class="col-md-3">
+                        <i class="fa-solid fa-business-time"></i>
+                        <h2>Business Solutions</h2>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.   
+                        </p>
+                        <a href="#">Learn more</a>
+                    </div>
+                </div>
+
+            </div>
+        </section> -->
+
+        <section id="contact">
+            <div class="container">
+                <!-- <h1 class="title text-center">Contact Me</h1> -->
+                <div class="row">
+                    <div class="col-md-6 contact-left text-center">
+                        <h3>Contact me</h3>
+                        <p><i class="fa-solid fa-envelope"></i><a href="mailto:stajnko.martin93@gmail.com">stajnko.martin93@gmail.com</a></p>
+                        <p><i class="fa-solid fa-phone"></i>+34689437421 or +38641986984</p>
+                        <!-- <a href="static/cv/Profile.pdf" target="download" class="btn btn-primary btn2">Download CV</a> -->
+                    </div>
+                    <div class="col-md-6 contact-right text-center">
+                        <h3>Follow me</h3>
+                        <div class="social-icon">
+                            <a href="https://es.linkedin.com/in/martin-stajnko-1608b6160?original_referer=https%3A%2F%2Fwww.google.com%2F" target="_blank"><i class="fa-brands fa-linkedin social-linkedin"></i></a>
+                            <a href="https://www.instagram.com/planetofbees/" target="_blank"><i class="fa-brands fa-instagram social-instagram"></i></a>
+                            <a href="https://github.com/martinstajnko" target="_blank"><i class="fa-brands fa-github social-github"></i></a>                                                
+                        </div>                        
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <footer id="copyright">
+            <p>© 2023 MTesting. All Rights Reserved. Designed by <a>Martin Stajnko</a></p>
+        </footer>
+
+
+    </div>       
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    
+</body>
+</html>
