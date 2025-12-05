@@ -1,9 +1,40 @@
-Welcome to my portfolio repository!
+# Martin Stajnko - Portfolio
 
-This repository contains a selection of my work and projects that showcase my skills and experience as a developer.
+A modern, responsive portfolio website showcasing my work as a QA/SDET Engineer and Full-Stack Developer.
 
-In the root directory, you will find a brief overview of my background and a list of technologies that I have experience with. The projects directory contains a detailed list of my past and current projects, each with its own subdirectory. Each project directory includes a description of the project, a list of technologies used, and links to live demos or code repositories.
+## 🚀 Features
 
-I hope you find my portfolio repository helpful in getting to know more about my work and abilities. Thank you for visiting!
+- **Dark/Light Mode Toggle** - Seamless theme switching with localStorage persistence
+- **Responsive Design** - Mobile-first approach using Bootstrap 5
+- **Single-Page Architecture** - Smooth anchor navigation between sections
+- **Modern UI** - Glassmorphic cards, gradient backgrounds, and smooth animations
 
-Find the working version at [LINK](https://www.techwithmartin.com)
+## 🛠️ Tech Stack
+
+- **Frontend**: HTML5, CSS3, JavaScript
+- **Framework**: Bootstrap 5.2.3
+- **Icons**: Font Awesome 6
+- **Fonts**: Montserrat (Google Fonts)
+
+## 📂 Structure
+
+```
+portfolio/
+├── index.html              # Main English page
+├── slo.html               # Slovenian version (coming soon)
+├── style.css              # Main stylesheet
+├── js/
+│   └── main.js           # Theme toggle & interactions
+├── static/
+│   ├── assets/           # Logo & favicon
+│   ├── images/           # Profile photos
+│   └── cv/               # Resume files
+└── README.md
+```
+
+## ⚙️ Setup & Deployment
+**Domain**: martinsbuilds.dev 
+
+---
+
+© 2023–2025 MTesting. All rights reserved.
