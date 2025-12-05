@@ -4,247 +4,245 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Martin's Portfolio</title>
-    <link rel="stylesheet" href="style_slo.css">
-    <!-- Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" 
-          integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-    
+    <title>Martin Stajnko | QA & SDET Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
     <script src="https://kit.fontawesome.com/ff2e88431e.js" crossorigin="anonymous"></script>
-
 </head>
 <body>
-    <div id="page">
-
-        <!-- if we put navbar in div id=anything when scrolling down we won't see navbar -->        
-        <nav class="navbar navbar-expand-lg bg-light gradient-navbar" id="nav-bar">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#"><img src="./static/assets/favicon.png" alt="logo" class="logo"></a>              
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ms-auto">
-                        <!-- <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="#header">Home</a>
-                        </li> -->
-                        <li class="nav-item">
-                            <a class="nav-link" href="#header">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#services">Services</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#contact">Contact</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="slo.html">SLO</a>
-                        </li>
-                    </ul>
-                </div>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="#header" aria-label="Home">
+                <img src="./static/assets/favicon.png" alt="Martin Stajnko logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-lg-center">
+                    <li class="nav-item"><a class="nav-link" href="#header">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">Profile</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#demo-projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    <!-- <li class="nav-item"><a class="nav-link" href="slo.html">SLO</a></li> -->
+                    <li class="nav-item"><button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode"><i class="fa-solid fa-moon"></i></button></li>
+                </ul>
             </div>
-        </nav>
+        </div>
+    </nav>
 
-        <header id="header">
+    <div id="page">
+        <header id="header" class="hero section-pad">
             <div class="container">
-                <div class="row">
-                    <div class="text-center">                       
-                        <img src="static/images/wave.jpg" class="img-fluid">
-                        <h1>Hi, I'm Martin</h1>
-                        <h2>an Electrical Engineer from SLOVEnia</h2>
-                    </div>
+                <img src="./static/images/martin_profile.jpeg" alt="Portrait of Martin Stajnko">
+                <h1>Hi, I'm Martin</h1>
+                <h2>~Builder • Dreamer • Father • Husband~</h2>
+                <p>QA/SDET specializing in building lean, reliable automation that shrinks release cycles and lifts quality. Pragmatic, data-driven, and collaborative across engineering, product, and ops.</p>
+                <div class="d-flex justify-content-center gap-3 flex-wrap">
+                    <a class="btn btn-light fw-semibold" href="#contact">Work Together</a>
+                    <!-- <a class="btn btn-outline-light fw-semibold" href="./static/resume.pdf" target="_blank" rel="noopener">Download Resume</a> -->
                 </div>
             </div>
         </header>
 
-        <section id="about">
+        <section id="about" class="section-pad">
             <div class="container">
-                <div class="row description">
-                    <div class="col-lg-4">
-                        <img src="static/images/martin.jpg" alt="me" class="img-thumbnail">
-                    </div>
-                    <div class="col-lg-4">
-                        <p class="promo-title">About me</p>
-                        <p class="description">
-                            Dynamic, passionate and meticulous Electrical Engineer with 3+ years of professional experience in field of automation test development, software testing and 
-                            firmware/hardware testing. Skilled in manual and automated testing, designing and implementing automation processes and test cases, creating test plans, designing architecture of the new test frameworks and test results analysis.
-                            I love to play around with new technologies and I am always looking for new challenges. In my spare time I love to hike, swimm, play football, read books and travel. I am also amateur beekeeper and I love to work with animals and be in the nature.
-                        </p>                                            
-                    </div>
-                    <div class="col-lg-4">
-                        <p class="tab-links">Technologies in which I have strong background:</p>
-                        <div class="col-lg-6 mx-auto">
-                            <ul class="contents tech">
-                                <li> <span>Python</span></li>
-                                <li> <span>Pytest</span></li>
-                                <li> <span>C#</span></li>
-                                <li> <span>Selenium Web Driver</span></li>
-                                <li> <span>Selenium Grid</span></li>
-                                <li> <span>Git</span></li>
-                                <li> <span>HTML</span></li>
-                                <li> <span>CSS</span></li>
-                                <li> <span>JavaScript</span></li>
-                                <li> <span>BootStrap</span></li>                         
-                            </ul>                       
-                        </div>                           
-                    </div>                        
-                </div>
-
-                <div class="row">
-                    <div class="col-md-4">
-                        <p class="tab-links">Soft Skills</p>
-                        <ul class="contents about-me">
-                            <li> <span>Creativity</span></li>
-                            <li> <span>Proactivity</span></li>
-                            <li> <span>Problem-solving</span></li>
-                            <li> <span>Team player</span></li>
-                            <li> <span>Communication</span></li>
-                            <li> <span>Adaptability</span></li>
-                            <li> <span>Positivity</span></li>                                 
-                        </ul>                       
-                    </div>
-                    <div class="col-md-4">
-                        <p class="tab-links">Experiances</p>
-                        <ul class="contents about-me">
-                            <li> <span>QA Python Engineer</span><br>WeGetFinancing, USA 2021-</li>
-                            <li> <span>QA Engineer</span><br>Blocksi SAS, Slovenia 2021</li>
-                            <li> <span>Firmware Test Engineer/Developer</span><br>Iskraemeco, Slovenia 2017-2021</li>
-                        </ul>
-                    </div>
-                    <div class="col-md-4">
-                        <p class="tab-links"">Education</p>
-                        <ul class="contents about-me">
-                            <li> <span>2019</span><br>Master's Degree from Automation and Robotics</li>
-                            <li> <span>2018</span><br>Erasmus+ Student exchange in Las Palmas, GC</li>
-                            <li> <span>2015</span><br>Bachelor's Degree from Electrical-Power Engineering</li>
-                        </ul>
-                    </div>
-                </div>
-
-            </div>
-        </section>
-
-        <section id="services">
-            <div class="container">
-                <h1 class="title text-center">My Services</h1>
-                <div class="row text-center">
-                    <div class="col-md-4">
-                        <div>
-                            <i class="fa-solid fa-wand-sparkles"></i>
-                            <h2>Daily tasks Automation</h2>
-                            <p> 
-                                Daily tasks automation is the process of using technology to automatically perform routine or repetitive tasks. 
-                                This can be done through the use of software programs, scripts, or other automation tools. 
-                                The goal of daily tasks automation is to improve efficiency, reduce the risk of human error, and free up time for more complex, value-added activities. 
-                                Some examples of tasks that can be automated include data entry, appointment scheduling, email responses, and social media updates.        
-                            </p>
-                            <a href="#">Contact me for more informations</a>
+                <div class="row g-4 align-items-stretch">
+                    <div class="col-lg-6">
+                        <div class="card-lite h-100">
+                            <h2 class="section-title">About Me</h2>
+                            <p class="text-muted mb-3">I am a QA Engineer/SDET specializing in building robust, data-driven automation frameworks and scalable CI/CD pipelines. My goal is to maximize quality assurance efficiency across the entire stack—from embedded systems to modern web applications.</p>
+                            <p class="text-muted mb-3">My foundation includes a Master's in Electrical Engineering (Automation & Robotics) and hands-on experience in Linux-based embedded system testing (Firmware Test Engineer, 4 years). I leverage this deep system knowledge to architect resilient test solutions for complex environments.</p>
+                            <div class="mb-2 fw-bold">Skills & Tools</div>
+                            <div>
+                                <span class="badge-tech"><i class="fa-brands fa-python"></i>Python</span>
+                                <span class="badge-tech"><i class="fa-brands fa-js-square"></i>JavaScript</span>
+                                <span class="badge-tech"><i class="fa-brands fa-node-js"></i>Node.js</span>
+                                <span class="badge-tech"><i class="fa-brands fa-bash"></i>Bash(Shell)</span>
+                                <span class="badge-tech"><i class="fa-brands fa-linux"></i>Linux</span>
+                                <span class="badge-tech"><i class="fa-solid fa-terminal"></i>Bash Scripting</span>
+                                <span class="badge-tech"><i class="fa-brands fa-react"></i>React</span>
+                                <span class="badge-tech"><i class="fa-solid fa-server"></i>Express</span>
+                                <span class="badge-tech"><i class="fa-solid fa-database"></i>MySQL</span>
+                                <span class="badge-tech"><i class="fa-solid fa-database"></i>MongoDB</span>
+                                <span class="badge-tech"><i class="fa-solid fa-bolt"></i>Electrical Engineering</span>
+                                <span class="badge-tech"><i class="fa-solid fa-microchip"></i>Firmware Testing</span>
+                                <span class="badge-tech"><i class="fa-solid fa-vial"></i>Pytest</span>
+                                <span class="badge-tech"><i class="fa-solid fa-robot"></i>Selenium</span>
+                                <span class="badge-tech"><i class="fa-solid fa-flask"></i>Playwright</span>
+                                <span class="badge-tech"><i class="fa-solid fa-network-wired"></i>API Testing</span>
+                                <span class="badge-tech"><i class="fa-brands fa-aws"></i>AWS</span>
+                                <span class="badge-tech"><i class="fa-brands fa-docker"></i>Docker</span>
+                                <span class="badge-tech"><i class="fa-brands fa-jenkins"></i>Jenkins</span>
+                                <span class="badge-tech"><i class="fa-brands fa-git-alt"></i>Git</span>
+                                <span class="badge-tech"><i class="fa-solid fa-gauge-high"></i>Performance</span>
+                            </div>
+                            <div class="mt-3 fw-bold">Experience</div>
+                            <ul class="list-simple">
+                                <li>QA Engineer / SDET — WeGetFinancing | 2021/7 - Present</li>
+                                <li>QA Engineer — Blocksi | 2021/4 - 2021/7</li>
+                                <li>Firmware Test Engineer — Iskraemeco | 2017/5 - 2021/4</li>
+                            </ul>
                         </div>
                     </div>
-                    <div class="col-md-4">
-                        <div>
-                            <i class="fa-solid fa-vial-virus"></i>
-                            <h2>QA of the software/firmware</h2>
-                            <p>
-                                QA testing is often performed by a QA engineer or QA tester, who will use a variety of tools and techniques to test the code and ensure that it meets the requirements.
-                                Quality assurance (QA) is the process of verifying that a product, service, or system meets specific quality standards.                                 
-                                The goal of QA is to identify and fix any defects or issues before the product is released to the public, in order to improve the overall quality and reliability of the software or firmware.
-                            </p>
-                            <!-- <a href="#">Contact me for more informations</a> -->
-                            <a href="#">Contact me for more informations</a>
+                    <div class="col-lg-6">
+                        <div class="card-lite h-100">
+                            <h2 class="section-title">Soft Skills & Education</h2>
+                            <ul class="list-simple mb-3">
+                                <li>Proactive, clear communication, and collaborative</li>
+                                <li>Problem-solving with data and fast feedback loops</li>
+                                <li>Coaching teams on quality ownership</li>
+                                <li>Adaptable to changing priorities and new technologies</li>
+                                <li>Strong organizational and time-management skills</li>
+                                <li>Continuous learner and self-motivated</li>
+                                <li>Team player and collaborator</li>
+                            </ul>
+                            <div class="fw-bold">Education</div>
+                            <ul class="list-simple">
+                                <li>MSc Electrical Engineering — Automation & Robotics | 2015 - 2019</li>
+                                <li>Erasmus+ Exchange — Las Palmas, GC | 2018/1 - 2018/6</li>
+                                <li>BSc Electrical-Power Engineering | 2012 - 2015</li>
+                            </ul>
                         </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div>
-                            <i class="fa-solid fa-laptop-code"></i>
-                            <h2>Creating custom websites</h2>
-                            <p>
-                                Creating custom websites involves designing and building a unique, tailor-made website for a specific client or purpose. 
-                                This process typically begins with gathering information about the client's business, brand, and target audience, as well as their specific needs and goals for the website. 
-                                Based on this information, the website designer or development team will create a customized design and layout for the site, as well as determine which features and functionalities will be included. 
-                                Especially I am in love with wedding websites.
-                            </p>
-                            <a href="https://eugeniemartin.space/" target="_blank">Open example</a>
-                        </div>
-                    </div>
-                         
-                </div>
-                <!-- <div class="all-services text-center">
-                    <button type="button" class="btn btn-primary">All Services</button>  
-                </div>       -->
-                        
-            </div>
-        </section>
-
-        <!-- <section id="my-work">
-            <div class="container">
-                <h1 class="title text-center">My Work</h1>
-                <div class="row">
-                    <div class="col-md-3">
-                        <i class="fa-solid fa-business-time"></i>
-                        <h2>Business Solutions</h2>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.   
-                        </p>
-                        <a href="#">Learn more</a>
-                    </div>
-                    <div class="col-md-3">
-                        <i class="fa-solid fa-business-time"></i>
-                        <h2>Business Solutions</h2>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.   
-                        </p>
-                        <a href="#">Learn more</a>
-                    </div>
-                    <div class="col-md-3">
-                        <i class="fa-solid fa-business-time"></i>
-                        <h2>Business Solutions</h2>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.   
-                        </p>
-                        <a href="#">Learn more</a>
-                    </div>
-                    <div class="col-md-3">
-                        <i class="fa-solid fa-business-time"></i>
-                        <h2>Business Solutions</h2>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.   
-                        </p>
-                        <a href="#">Learn more</a>
-                    </div>
-                </div>
-
-            </div>
-        </section> -->
-
-        <section id="contact">
-            <div class="container">
-                <!-- <h1 class="title text-center">Contact Me</h1> -->
-                <div class="row">
-                    <div class="col-md-6 contact-left text-center">
-                        <h3>KOntaktiraj </h3>
-                        <p><i class="fa-solid fa-envelope"></i><a href="mailto:stajnko.martin93@gmail.com">stajnko.martin93@gmail.com</a></p>
-                        <p><i class="fa-solid fa-phone"></i>+34689437421 or +38641986984</p>
-                        <!-- <a href="static/cv/Profile.pdf" target="download" class="btn btn-primary btn2">Download CV</a> -->
-                    </div>
-                    <div class="col-md-6 contact-right text-center">
-                        <h3>Sledi mi</h3>
-                        <div class="social-icon">
-                            <a href="https://es.linkedin.com/in/martin-stajnko-1608b6160?original_referer=https%3A%2F%2Fwww.google.com%2F" target="_blank"><i class="fa-brands fa-linkedin social-linkedin"></i></a>
-                            <a href="https://www.instagram.com/planetofbees/" target="_blank"><i class="fa-brands fa-instagram social-instagram"></i></a>
-                            <a href="https://github.com/martinstajnko" target="_blank"><i class="fa-brands fa-github social-github"></i></a>                                                
-                        </div>                        
                     </div>
                 </div>
             </div>
         </section>
 
+        <section id="services" class="section-pad section-services">
+            <div class="container">
+                <h2 class="section-title text-center">Services</h2>
+                <div class="row g-4 justify-content-center">
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card-lite text-center">
+                            <div class="service-icon"><i class="fa-solid fa-cogs"></i></div>
+                            <h5 class="fw-bold mb-2">Test Automation Frameworks</h5>
+                            <p class="text-muted mb-3">Designing lean, scalable automation with Pytest, Selenium/Playwright, and clean reporting.</p>
+                            <a class="cta-link" href="#contact">Request a consult</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card-lite text-center">
+                            <div class="service-icon"><i class="fa-solid fa-network-wired"></i></div>
+                            <h5 class="fw-bold mb-2">API Quality & CI</h5>
+                            <p class="text-muted mb-3">Reliable API coverage, contract tests, and CI hardening to keep services shippable.</p>
+                            <a class="cta-link" href="#contact">See how</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card-lite text-center">
+                            <div class="service-icon"><i class="fa-solid fa-gauge-high"></i></div>
+                            <h5 class="fw-bold mb-2">Performance & Reliability</h5>
+                            <p class="text-muted mb-3">Load testing with Locust/JMeter to find bottlenecks before they hit users.</p>
+                            <a class="cta-link" href="#contact">Schedule a run</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card-lite text-center">
+                            <div class="service-icon"><i class="fa-solid fa-laptop-code"></i></div>
+                            <h5 class="fw-bold mb-2">Website & Web App Development</h5>
+                            <p class="text-muted mb-3">Building custom, responsive websites and web applications with React, Node.js, and modern tooling.</p>
+                            <a class="cta-link" href="#contact">Start your project</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card-lite text-center">
+                            <div class="service-icon"><i class="fa-solid fa-palette"></i></div>
+                            <h5 class="fw-bold mb-2">Custom Web Solutions</h5>
+                            <p class="text-muted mb-3">Tailored full-stack solutions from concept to deployment, including UI/UX and database design.</p>
+                            <a class="cta-link" href="#contact">Discuss your needs</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-        <footer id="copyright">
-            <p>© 2023 MTesting. All Rights Reserved. Designed by <a>Martin Stajnko</a></p>
+        <section id="demo-projects" class="section-pad">
+            <div class="container">
+                <h2 class="section-title text-center">Demo Projects</h2>
+                <div class="row g-4 justify-content-center">
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card-lite text-center">
+                            <div class="project-icon"><i class="fa-brands fa-github"></i></div>
+                            <h5 class="fw-bold mb-2">Playwright UI Demo</h5>
+                            <p class="text-muted mb-2">Frontend automation testing showcase using Playwright with Python.</p>
+                            <p class="text-muted text-sm"><strong>Stack:</strong> Playwright, Python, Pytest</p>
+                            <a class="cta-link" href="https://github.com/martinstajnko/Playwright-UI-Demo" target="_blank" rel="noopener">View on GitHub</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card-lite text-center">
+                            <div class="project-icon"><i class="fa-brands fa-github"></i></div>
+                            <h5 class="fw-bold mb-2">Playwright API Demo</h5>
+                            <p class="text-muted mb-2">API testing and automation patterns using Playwright with Python.</p>
+                            <p class="text-muted text-sm"><strong>Stack:</strong> Playwright, Python, API Testing</p>
+                            <a class="cta-link" href="https://github.com/martinstajnko/Playwright-API-Demo" target="_blank" rel="noopener">View on GitHub</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card-lite text-center">
+                            <div class="project-icon"><i class="fa-solid fa-chart-line"></i></div>
+                            <h5 class="fw-bold mb-2">VibeTape</h5>
+                            <p class="text-muted mb-2">Track your daily mood and discover what positively or negatively affects your life. Log your feelings, habits, and activities—get insights and analytics to help you grow and feel better every day.</p>
+                            <p class="text-muted text-sm"><strong>Stack:</strong> React, Node.js, MongoDB, Express</p>
+                            <a class="cta-link" href="https://www.vibetape.app" target="_blank" rel="noopener">Visit VibeTape</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card-lite text-center">
+                            <div class="project-icon"><i class="fa-solid fa-spa"></i></div>
+                            <h5 class="fw-bold mb-2">In The Moment</h5>
+                            <p class="text-muted mb-2">Music organization for unforgettable moments. A custom wedding and event music planning website showcasing responsive design and modern UX.</p>
+                            <p class="text-muted text-sm"><strong>Stack:</strong> HTML, CSS, JavaScript, Responsive Design</p>
+                            <a class="cta-link" href="https://www.inthemoment.si" target="_blank" rel="noopener">Visit Site</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card-lite text-center">
+                            <div class="project-icon"><i class="fa-solid fa-server"></i></div>
+                            <h5 class="fw-bold mb-2">Home Server & Proxmox Cluster</h5>
+                            <p class="text-muted mb-2">Self-hosted infrastructure with Proxmox virtualization and multi-machine clustering.</p>
+                            <p class="text-muted text-sm"><strong>Stack:</strong> Proxmox, Linux, Virtualization, Networking</p>
+                            <span class="text-muted">Details available upon request</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section-pad section-contact">
+            <div class="container">
+                <div class="row g-4 justify-content-center align-items-center">
+                    <div class="col-lg-6">
+                        <h2 class="section-title">Contact</h2>
+                        <div class="contact-block">
+                            <p><i class="fa-solid fa-envelope-open-text me-2"></i><a href="mailto:stajnko.martin93@protonmail.com">stajnko.martin93@protonmail.com</a></p>
+                            <!-- <p><i class="fa-solid fa-phone me-2"></i><a href="tel:+34689437421">+34 689 437 421</a> / <a href="tel:+38641986984">+386 41 986 984</a></p> -->
+                            <!-- <p><i class="fa-solid fa-file-arrow-down me-2"></i><a href="./static/resume.pdf" target="_blank" rel="noopener">Download Resume</a></p> -->
+                        </div>
+                    </div>
+                    <div class="col-lg-6 text-lg-end text-center">
+                        <div class="d-flex gap-3 justify-content-lg-end justify-content-center">
+                            <a href="https://www.linkedin.com/in/martin-stajnko" target="_blank" rel="noopener" aria-label="LinkedIn" class="fs-3 text-white"><i class="fa-brands fa-linkedin"></i></a>
+                            <!-- <a href="https://www.instagram.com/planetofbees/" target="_blank" rel="noopener" aria-label="Instagram" class="fs-3 text-white"><i class="fa-brands fa-instagram"></i></a> -->
+                            <a href="https://github.com/martinstajnko" target="_blank" rel="noopener" aria-label="GitHub" class="fs-3 text-white"><i class="fa-brands fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="container">© 2023–2025 MTesting. All rights reserved. Designed by Martin Stajnko.</div>
         </footer>
+    </div>
 
-
-    </div>       
-
-    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
-    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./js/main.js"></script>
 </body>
 </html>
