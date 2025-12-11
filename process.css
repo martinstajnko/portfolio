@@ -1,0 +1,240 @@
+/* --- PROCESS PAGE SPECIFIC STYLES --- */
+
+/* Poenostavljen Navbar za Process stran */
+.process-nav {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: var(--nav-bg);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--nav-border);
+    padding: 16px 0;
+    transition: background 0.3s ease, border-color 0.3s ease;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Gumb za nazaj */
+.btn-back {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 600;
+    color: var(--text-dark);
+    padding: 8px 16px;
+    border-radius: 50px;
+    border: 1px solid var(--nav-border);
+    transition: all 0.2s ease;
+    font-size: 0.9rem;
+    text-decoration: none;
+}
+
+.btn-back:hover {
+    border-color: var(--cyan);
+    color: var(--cyan);
+    background: rgba(41, 185, 218, 0.05);
+}
+
+/* Header Section */
+.process-header {
+    padding: 80px 0 60px;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.process-header h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    margin-bottom: 16px;
+    /* Gradient text effect */
+    background: linear-gradient(135deg, var(--text-dark) 0%, var(--cyan) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* Dark mode fix za gradient text, če je potrebno */
+:root.dark-mode .process-header h1 {
+    background: linear-gradient(135deg, #fff 0%, var(--cyan) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.process-header p {
+    font-size: 1.2rem;
+    color: var(--text-muted);
+}
+
+/* Timeline Container */
+.timeline-wrapper {
+    position: relative;
+    padding: 40px 0;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Navpična črta */
+.timeline-wrapper::before {
+    content: '';
+    position: absolute;
+    left: 24px; /* Poravnava s sredino krogcev */
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: linear-gradient(180deg, 
+        rgba(41, 185, 218, 0.1) 0%, 
+        var(--cyan) 50%, 
+        rgba(41, 185, 218, 0.1) 100%);
+    z-index: 0;
+}
+
+.step-card {
+    position: relative;
+    margin-bottom: 60px;
+    padding-left: 80px; /* Prostor za številko */
+}
+
+/* Številka koraka (krogec) */
+.step-number {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 50px;
+    height: 50px;
+    background: var(--bg-primary);
+    border: 2px solid var(--cyan);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: var(--cyan);
+    z-index: 2;
+    box-shadow: 0 0 15px rgba(41, 185, 218, 0.15);
+    transition: background 0.3s ease;
+}
+
+/* Vsebina kartice */
+.step-content {
+    background: var(--card-bg);
+    border: 1px solid var(--nav-border);
+    border-radius: 16px;
+    padding: 32px;
+    box-shadow: var(--shadow);
+    transition: transform 0.2s ease, border-color 0.2s ease, background 0.3s ease;
+}
+
+.step-content:hover {
+    transform: translateY(-5px);
+    border-color: var(--cyan);
+}
+
+.step-content h3 {
+    font-weight: 700;
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.step-badge {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    background: rgba(41, 185, 218, 0.1);
+    color: var(--cyan);
+    padding: 4px 8px;
+    border-radius: 4px;
+}
+
+/* Tech Tags / Pills */
+.tech-pill {
+    display: inline-block;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--text-muted);
+    border: 1px solid var(--nav-border);
+    padding: 4px 10px;
+    border-radius: 20px;
+    margin-right: 6px;
+    margin-top: 12px;
+    background: rgba(255,255,255,0.05);
+}
+
+/* --- Code & Terminal Visuals --- */
+.code-block {
+    font-family: 'Fira Code', monospace;
+    background: #1e1e1e;
+    color: #d4d4d4;
+    padding: 16px;
+    border-radius: 8px;
+    border-left: 4px solid #d4af37; /* Rumeni accent */
+    margin-top: 20px;
+    font-size: 0.9rem;
+    overflow-x: auto;
+}
+
+.terminal {
+    background: #0f172a;
+    border-radius: 10px;
+    margin-top: 24px;
+    border: 1px solid #334155;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    overflow: hidden;
+    font-family: 'Fira Code', monospace;
+    text-align: left;
+}
+
+.terminal-header {
+    background: #1e293b;
+    padding: 8px 16px;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    border-bottom: 1px solid #334155;
+}
+
+.dot { width: 10px; height: 10px; border-radius: 50%; display: inline-block; }
+.red { background: #ef4444; }
+.yellow { background: #f59e0b; }
+.green { background: #22c55e; }
+
+.terminal-body {
+    padding: 16px;
+    color: #e2e8f0;
+    font-size: 0.85rem;
+}
+
+.cmd { color: var(--cyan); margin-bottom: 8px; }
+.log-pass { color: #4ade80; font-weight: bold; }
+.log-text { color: #94a3b8; }
+
+.typewriter {
+    display: inline-block;
+    border-right: 2px solid var(--cyan);
+    animation: blink 0.75s step-end infinite;
+}
+
+@keyframes blink { 50% { border-color: transparent; } }
+
+/* CTA na dnu */
+.process-cta {
+    text-align: center;
+    padding: 60px 0;
+}
+
+/* Mobilne prilagoditve */
+@media (max-width: 768px) {
+    .timeline-wrapper::before { left: 19px; }
+    .step-card { padding-left: 60px; }
+    .step-number { width: 40px; height: 40px; font-size: 1rem; }
+    .process-header h1 { font-size: 2.2rem; }
+}
