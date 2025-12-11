@@ -1,8 +1,7 @@
 (function () {
-	
 	'use strict';
 
-	// Dark mode toggle
+	// 1. Dark mode toggle (To je že bilo super, pustimo enako)
 	var initThemeToggle = function() {
 		const themeToggle = document.getElementById('themeToggle');
 		if (!themeToggle) return;
@@ -10,13 +9,11 @@
 		const html = document.documentElement;
 		const savedTheme = localStorage.getItem('theme') || 'light';
 
-		// Set initial theme
 		if (savedTheme === 'dark') {
 			html.classList.add('dark-mode');
 			themeToggle.innerHTML = '<i class="fa-solid fa-sun"></i>';
 		}
 
-		// Toggle theme on button click
 		themeToggle.addEventListener('click', function(e) {
 			e.preventDefault();
 			html.classList.toggle('dark-mode');
@@ -26,33 +23,37 @@
 		});
 	};
 
+	// 2. Go To Top (Predelano v Vanilla JS - brez jQuery)
 	var goToTop = function() {
+		// Poiščemo gumb (če obstaja v HTML-ju)
+		const goTopBtn = document.querySelector('.js-gotop');
+		const backToTopContainer = document.querySelector('.js-top'); 
+		// Opomba: Če v HTML nimaš elementa s class="js-gotop" ali "js-top", ta del ne bo naredil ničesar (kar je OK).
 
-		$('.js-gotop').on('click', function(event){
-			
-			event.preventDefault();
+		if (goTopBtn) {
+			goTopBtn.addEventListener('click', function(event) {
+				event.preventDefault();
+				window.scrollTo({
+					top: 0,
+					behavior: 'smooth' // To nadomesti jQuery .animate()
+				});
+			});
+		}
 
-			$('html, body').animate({
-				scrollTop: $('html').offset().top
-			}, 500, 'easeInOutExpo');
-			
-			return false;
-		});
-
-		$(window).scroll(function(){
-
-			var $win = $(window);
-			if ($win.scrollTop() > 200) {
-				$('.js-top').addClass('active');
-			} else {
-				$('.js-top').removeClass('active');
-			}
-
-		});
-	
+		if (backToTopContainer || goTopBtn) {
+			const target = backToTopContainer || goTopBtn;
+			window.addEventListener('scroll', function() {
+				if (window.scrollY > 200) {
+					target.classList.add('active');
+				} else {
+					target.classList.remove('active');
+				}
+			});
+		}
 	};
 
-	$(function(){
+	// 3. Poženemo, ko je stran naložena
+	document.addEventListener('DOMContentLoaded', function() {
 		initThemeToggle();
 		goToTop();
 	});
